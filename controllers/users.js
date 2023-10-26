@@ -1,9 +1,9 @@
 import { Request, Response } from "express";
 import { sendEmail } from "../utils/email";
 
-export const contactMe = async(req: any, res: Response) => {
+export const contactMe = async(req, res) => {
     try {
-        const date:any = new Date().toLocaleDateString() + " - " + new Date().toLocaleTimeString();
+        const date = new Date().toLocaleDateString() + " - " + new Date().toLocaleTimeString();
         const { email, username, message } = req.body;
         
         const mailOptions = {

@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(cors({ origin: "*" }))
 app.use("/api/v1/messages", MessageRoutes)
 
-app.get("/", (req:Request,res:Response) => {
+app.get("/", (req,res) => {
     res.send("portfolio apis");
 })
 
