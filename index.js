@@ -1,7 +1,6 @@
 import express from "express";
 import dotenv from "dotenv";
 dotenv.config();
-import { Request, Response } from "express";
 import cors from "cors";
 import MessageRoutes from "./routes/message.js"
 

@@ -1,4 +1,3 @@
-import { Request, Response } from "express";
 import { sendEmail } from "../utils/email.js";
 
 export const contactMe = async(req, res) => {
