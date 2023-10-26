@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 dotenv.config();
 import { Request, Response } from "express";
 import cors from "cors";
-import MessageRoutes from "./routes/message"
+import MessageRoutes from "./routes/message.js"
 
 const app = express();
 const port = process.env.PORT || 8000;
